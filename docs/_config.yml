@@ -3,8 +3,8 @@
 # =====================
 title: "Alex Rivera — Cybersecurity & Backend Developer"
 description: "Portfolio showcasing secure backend systems, automation, and case studies."
-url: "https://your-username.github.io" # ← Update with your actual username
-baseurl: "/your-repo" # ← Update with your actual repo name or "" if main site
+url: "https://abhinav9558.github.io" # ← Your actual GitHub username
+baseurl: "/DAE-Demo" # ← Your actual repository name
 
 # =====================
 # THEME (Modern)
@@ -31,12 +31,7 @@ author:
 # =====================
 # NAVIGATION (top menu)
 # =====================
-header_pages:
-    - index.md
-    - about.md
-    - projects.md
-    - resume.md
-    - contact.md
+# Navigation is configured in _data/navigation.yml for Minimal Mistakes theme
 
 # =====================
 # BRANDING
@@ -50,6 +45,7 @@ plugins:
     - jekyll-feed
     - jekyll-seo-tag
     - jekyll-include-cache
+    - jekyll-remote-theme
 
 # =====================
 # BUILD & MARKDOWN
