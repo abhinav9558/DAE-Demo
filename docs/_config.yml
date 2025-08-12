@@ -1,6 +1,91 @@
-theme: minima
-title: My Portfolio
-decscription: A brief description of my portfolio
+# =====================
+# SITE BASICS
+# =====================
+title: "Alex Rivera — Cybersecurity & Backend Developer"
+description: "Portfolio showcasing secure backend systems, automation, and case studies."
+url: "https://your-username.github.io" # ← Update with your actual username
+baseurl: "/your-repo" # ← Update with your actual repo name or "" if main site
+
+# =====================
+# THEME (Modern)
+# =====================
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+# =====================
+# AUTHOR PROFILE
+# =====================
 author:
-  name: Abhinav Piratla
-  email: piratla.abhinav1@gmail.com
+    name: "Alex Rivera"
+    avatar: "/assets/img/pinky.jpg" # ← Fixed from .heic
+    bio: "Cybersecurity & backend developer focused on secure-by-default services."
+    email: "alex.rivera@example.com"
+    links:
+        - label: "GitHub"
+          icon: "fab fa-github"
+          url: "https://github.com/your-username"
+        - label: "LinkedIn"
+          icon: "fab fa-linkedin"
+          url: "https://www.linkedin.com/in/your-profile/"
+
+# =====================
+# NAVIGATION (top menu)
+# =====================
+header_pages:
+    - index.md
+    - about.md
+    - projects.md
+    - resume.md
+    - contact.md
+
+# =====================
+# BRANDING
+# =====================
+logo: "/assets/img/dae-logo.jpg" # ← Fixed from .avif
+
+# =====================
+# PLUGINS (safe + GitHub Pages supported)
+# =====================
+plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-include-cache
+
+# =====================
+# BUILD & MARKDOWN
+# =====================
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# =====================
+# GLOBAL DEFAULTS (keeps layout consistent)
+# =====================
+# These defaults apply Minimal Mistakes' single-page layout with a sticky ToC.
+# They won't break Minima; Minima ignores unknown front matter values.
+defaults:
+    - scope:
+          path: ""
+          type: "pages"
+      values:
+          layout: single
+          toc: true
+          toc_sticky: true
+          author_profile: true
+
+# =====================
+# EXCLUDES (keep the build clean)
+# =====================
+# GitHub Pages handles these exclusions automatically
+# exclude:
+#     - README.md
+#     - Gemfile
+#     - Gemfile.lock
+#     - .sass-cache/
+#     - .jekyll-cache/
+#     - gemfiles/
+#     - node_modules/
+#     - vendor/bundle/
+#     - vendor/cache/
+#     - vendor/gems/
+#     - vendor/ruby/

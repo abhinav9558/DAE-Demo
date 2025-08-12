@@ -1,0 +1,284 @@
+/* Custom styles for the GitHub Pages site */
+
+/* Enhanced image styling */
+.rounded-image {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+img.rounded {
+    border-radius: 12px;
+}
+
+/* Professional header styling */
+.site-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Enhanced footer */
+.footer-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 3px solid #007bff;
+    border-radius: 8px 8px 0 0;
+}
+
+.footer-note .dae-logo {
+    height: 40px;
+    opacity: 0.8;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+/* Project cards styling */
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-tech-stack {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #6c757d;
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+/* Profile header styling */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    border-left: 4px solid #007bff;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-info h1 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 2.2rem;
+}
+
+.profile-info .subtitle {
+    color: #34495e;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+}
+
+.profile-info .description {
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Skills and certifications styling */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+}
+
+.skill-category h4 {
+    margin: 0 0 1rem 0;
+    color: #2c3e50;
+}
+
+.skill-category ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Contact cards styling */
+.contact-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+}
+
+.contact-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+}
+
+.contact-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .profile-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        padding: 1rem;
+    }
+}
+
+/* Navigation enhancements */
+.masthead {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Button styling */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Code and technical content styling */
+code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #e83e8c;
+}
+
+pre {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Achievement and highlight boxes */
+.highlight-box {
+    background: linear-gradient(135deg, #e8f4fd 0%, #d1ecf1 100%);
+    border: 1px solid #bee5eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.highlight-box h3 {
+    color: #0c5460;
+    margin: 0 0 1rem 0;
+}
+
+/* Loading animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Print styles */
+@media print {
+    .site-header,
+    .site-footer,
+    .page__footer {
+        display: none;
+    }
+    
+    .page__content {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .project-card,
+    .contact-card,
+    .skill-category {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
