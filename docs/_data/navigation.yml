@@ -8,6 +8,6 @@ main:
       - title: "Theme 2 - Cyberpunk"
         url: /theme2/
   - title: "Documentation"
-    url: /README/
+     url: /README.html
   - title: "GitHub"
     url: "https://github.com/your-username/DAE-Demo"
