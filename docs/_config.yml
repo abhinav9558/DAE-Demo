@@ -78,3 +78,5 @@ exclude:
   - Gemfile.lock
   - vendor/
   - .bundle/
+  - theme1/
+  - theme2/
