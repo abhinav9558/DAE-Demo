@@ -91,7 +91,7 @@ docs/
 3. Customize the design and content
 4. Update the main showcase page to include the new theme
 
-## 🔄 Local Development
+## 🔄 Local Development - 
 
 ### Testing the Showcase Site:
 ```bash
