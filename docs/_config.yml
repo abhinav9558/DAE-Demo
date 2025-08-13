@@ -1,8 +1,8 @@
 # =====================
 # SITE BASICS
 # =====================
-title: "Alex Rivera — Cybersecurity & Backend Developer"
-description: "Portfolio showcasing secure backend systems, automation, and case studies."
+title: "Portfolio Theme Showcase"
+description: "Professional portfolio themes for students and developers. Choose from our collection of GitHub Pages ready themes."
 url: "https://abhinav9558.github.io" # ← Your actual GitHub username
 baseurl: "/DAE-Demo" # ← Your actual repository name
 
@@ -16,17 +16,14 @@ minimal_mistakes_skin: "default"
 # AUTHOR PROFILE
 # =====================
 author:
-    name: "Alex Rivera"
+    name: "DAE Portfolio Themes"
     avatar: "/assets/img/pinky.jpg"
-    bio: "Cybersecurity & backend developer focused on secure-by-default services."
-    email: "alex.rivera@example.com"
+    bio: "Professional portfolio themes for GitHub Pages"
+    location: "Global"
     links:
-        - label: "GitHub"
+        - label: "GitHub Repository"
           icon: "fab fa-github"
-          url: "https://github.com/your-username"
-        - label: "LinkedIn"
-          icon: "fab fa-linkedin"
-          url: "https://www.linkedin.com/in/your-profile/"
+          url: "https://github.com/your-username/DAE-Demo"
 
 # =====================
 # NAVIGATION (top menu)
@@ -76,5 +73,8 @@ exclude:
   - .jekyll-cache/
   - node_modules/
   - README.md
-  - theme1/
-  - theme2/
+  - DEPLOYMENT.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/

@@ -1,118 +1,145 @@
-# Alex Rivera Portfolio - Dual Theme Setup
+# Portfolio Theme Showcase
 
-This portfolio website features a unique dual-theme experience that allows visitors to choose between two different visual styles while maintaining the same content.
+A collection of professional portfolio themes designed for GitHub Pages deployment. Perfect for students and developers who want to quickly set up a beautiful portfolio website.
 
-## 🎨 Theme Options
+## 🎨 Available Themes
 
-### Light Theme (`/light/`)
-- Clean, professional design
-- Bright, modern aesthetic
-- Perfect for showcasing technical content
-- Uses minimal-mistakes "default" skin
+### Theme 1 - Professional
+- **URL**: `/theme1/`
+- **Style**: Clean, modern design with professional layout
+- **Features**: Light theme, minimal design, excellent readability
+- **Best for**: Academic portfolios, professional presentations, technical documentation
 
-### Dark Theme (`/dark/`)
-- Cyberpunk-inspired design
-- Dark background with neon accents
-- Perfect for cybersecurity aesthetic
-- Custom CSS with neon color scheme
+### Theme 2 - Cyberpunk
+- **URL**: `/theme2/`
+- **Style**: Dark, futuristic design with neon accents
+- **Features**: Cyberpunk aesthetic, animated elements, striking visuals
+- **Best for**: Cybersecurity professionals, tech enthusiasts, creative portfolios
 
-## 🚀 GitHub Pages Deployment
+## 🚀 Quick Start
 
-This setup is designed to work seamlessly with GitHub Pages using a single deployment:
+### For Students/Users:
+1. **Preview** themes by visiting the live demo links
+2. **Download** the theme folder you prefer
+3. **Upload** to your GitHub repository
+4. **Enable** GitHub Pages in repository settings
+5. **Deploy** and share your portfolio!
 
-### File Structure
+### For Developers:
+1. Fork this repository
+2. Customize the themes in `theme1/` and `theme2/` folders
+3. Update the showcase page content
+4. Deploy to GitHub Pages
+
+## 📁 Repository Structure
+
 ```
 docs/
-├── _config.yml          # Main site configuration
+├── _config.yml          # Main showcase site configuration
 ├── _data/
-│   └── navigation.yml   # Main navigation with theme selector
-├── assets/              # Shared images and CSS
-├── index.md             # Theme selector landing page
-├── light.md             # Light theme homepage
-├── dark.md              # Dark theme homepage
-├── about.md             # Shared content pages
-├── projects.md
-├── resume.md
-├── contact.md
-├── theme1/              # Original light theme files (excluded from build)
-└── theme2/              # Original dark theme files (excluded from build)
+│   └── navigation.yml    # Showcase site navigation
+├── index.md             # Theme showcase landing page
+├── README.md            # This documentation
+├── assets/              # Shared assets (logos, etc.)
+├── theme1/              # Complete Theme 1 portfolio
+│   ├── _config.yml      # Theme 1 Jekyll config
+│   ├── _data/           # Theme 1 navigation
+│   ├── index.md         # Theme 1 home page
+│   ├── about.md         # Theme 1 about page
+│   ├── projects.md      # Theme 1 projects page
+│   ├── resume.md        # Theme 1 resume page
+│   ├── contact.md       # Theme 1 contact page
+│   └── assets/          # Theme 1 specific assets
+└── theme2/              # Complete Theme 2 portfolio
+    ├── _config.yml      # Theme 2 Jekyll config
+    ├── _data/           # Theme 2 navigation
+    ├── index.md         # Theme 2 home page
+    ├── about.md         # Theme 2 about page
+    ├── projects.md      # Theme 2 projects page
+    ├── resume.md        # Theme 2 resume page
+    ├── contact.md       # Theme 2 contact page
+    └── assets/          # Theme 2 specific assets
 ```
 
-### How It Works
+## 🔧 How It Works
 
-1. **Main Landing Page**: Visitors first see a theme selector at `/`
-2. **Theme Selection**: Users can choose between light (`/light/`) or dark (`/dark/`) themes
-3. **Shared Content**: All content pages (about, projects, resume, contact) are shared between themes
-4. **Single Deployment**: Everything runs from one GitHub Pages site
+1. **Main Showcase Site**: The root `/docs` folder contains a Jekyll site that showcases available themes
+2. **Individual Theme Sites**: Each theme folder (`theme1/`, `theme2/`) contains a complete, standalone Jekyll portfolio
+3. **GitHub Pages Deployment**: The main site deploys to the root URL, with themes accessible via subdirectories
+4. **Self-Contained Themes**: Each theme includes all necessary files for independent deployment
 
-### Deployment Steps
+## 🛠️ Technical Details
 
-1. **Repository Setup**:
-   ```bash
-   # Your repository should be named: username.github.io or any-repo-name
-   # Enable GitHub Pages in repository settings
-   # Set source to "Deploy from a branch" and select "main" branch, "/docs" folder
-   ```
-
-2. **Configuration**:
-   - Update `_config.yml` with your GitHub username and repository name
-   - Update URLs in navigation and content files
-   - Replace placeholder images in `/assets/img/`
-
-3. **Customization**:
-   - Modify content in the shared `.md` files
-   - Adjust styling in `dark.md` for the dark theme
-   - Update author information and links
-
-## 🛠️ Technical Implementation
-
-### Theme Switching
-- Uses Jekyll's minimal-mistakes theme as the base
-- Light theme uses the default skin
-- Dark theme uses custom CSS variables for neon effects
-- Both themes share the same content and navigation structure
-
-### SEO & Performance
-- Single site means better SEO consolidation
-- Shared assets reduce load times
-- Proper meta tags and structured data
-- Mobile-responsive design for both themes
-
-### Maintenance
-- Update content once in shared files
-- Both themes automatically reflect changes
-- Easy to add new pages or modify existing ones
-
-## 📝 Content Management
-
-To update content:
-1. Edit the shared `.md` files in the root directory
-2. Changes will appear on both theme versions
-3. Theme-specific styling is handled in the respective theme pages
-
-## 🔧 Local Development
-
-For local development, GitHub Pages uses Jekyll automatically. Simply push your changes to the repository and GitHub Pages will build and deploy your site.
-
-If you want to test locally, you can use GitHub's recommended approach:
-```bash
-# Install GitHub Pages gem (optional for local testing)
-gem install github-pages
-
-# Serve locally (optional)
-jekyll serve
-
-# Visit http://localhost:4000
-```
-
-## 📱 Features
-
-- **Responsive Design**: Works on all devices
-- **Fast Loading**: Optimized assets and minimal dependencies
+- **Jekyll**: Static site generator with GitHub Pages support
+- **Minimal Mistakes**: Base theme framework for consistency
+- **Responsive Design**: All themes work perfectly on mobile and desktop
 - **SEO Optimized**: Proper meta tags and structured data
-- **Accessible**: WCAG compliant design
-- **GitHub Pages Compatible**: No custom plugins required
+- **Fast Loading**: Optimized assets and minimal dependencies
+
+## 📝 Customizing Themes
+
+### To Modify Existing Themes:
+1. Navigate to the theme folder (`theme1/` or `theme2/`)
+2. Edit the content files (`.md` files)
+3. Update `_config.yml` with your information
+4. Modify `_data/navigation.yml` for menu changes
+5. Replace images in the `assets/` folder
+
+### To Add New Themes:
+1. Create a new folder (e.g., `theme3/`)
+2. Copy the structure from an existing theme
+3. Customize the design and content
+4. Update the main showcase page to include the new theme
+
+## 🔄 Local Development
+
+### Testing the Showcase Site:
+```bash
+cd docs
+gem install github-pages
+jekyll serve
+```
+Visit: `http://localhost:4000/DAE-Demo/`
+
+### Testing Individual Themes:
+```bash
+cd docs/theme1  # or theme2
+gem install github-pages
+jekyll serve
+```
+Visit: `http://localhost:4000/DAE-Demo/`
+
+## 🎯 Use Cases
+
+- **Educational Institutions**: Provide students with ready-to-use portfolio templates
+- **Bootcamps**: Give graduates professional portfolio options
+- **Developers**: Showcase different design approaches
+- **Recruiters**: Help candidates present their work professionally
+
+## 📄 What's Included in Each Theme
+
+- ✅ **Complete Portfolio Pages**: Home, About, Projects, Resume, Contact
+- ✅ **Responsive Design**: Works on all devices
+- ✅ **SEO Optimized**: Search engine friendly
+- ✅ **GitHub Pages Ready**: No setup required
+- ✅ **Professional Styling**: Industry-standard designs
+- ✅ **Easy Customization**: Simple content updates
+
+## 🤝 Contributing
+
+We welcome contributions! Please:
+1. Fork the repository
+2. Create a new theme or improve existing ones
+3. Test thoroughly
+4. Submit a pull request with clear documentation
+
+## 📞 Support
+
+For questions or issues:
+- Check the [GitHub Issues](https://github.com/your-username/DAE-Demo/issues)
+- Review the documentation
+- Contact the maintainers
 
 ---
 
-*This dual-theme approach provides a unique user experience while maintaining the simplicity of a single GitHub Pages deployment.*
+**Ready to get started?** [Choose a theme](/) and start building your professional portfolio today!

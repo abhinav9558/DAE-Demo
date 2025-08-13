@@ -1,17 +1,13 @@
 main:
-    - title: "Home"
-      url: /
-    - title: "About"
-      url: /about/
-    - title: "Projects"
-      url: /projects/
-    - title: "Resume"
-      url: /resume/
-    - title: "Contact"
-      url: /contact/
-    - title: "Themes"
-      children:
-        - title: "Light Theme"
-          url: /light/
-        - title: "Dark Theme"
-          url: /dark/
+  - title: "Home"
+    url: /
+  - title: "Themes"
+    children:
+      - title: "Theme 1 - Professional"
+        url: /theme1/
+      - title: "Theme 2 - Cyberpunk"
+        url: /theme2/
+  - title: "Documentation"
+    url: /README/
+  - title: "GitHub"
+    url: "https://github.com/your-username/DAE-Demo"
