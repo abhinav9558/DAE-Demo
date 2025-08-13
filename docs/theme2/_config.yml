@@ -4,7 +4,7 @@
 title: "Alex Rivera — Cybersecurity & Backend Developer"
 description: "Portfolio showcasing secure backend systems, automation, and case studies."
 url: "https://abhinav9558.github.io" # ← Your actual GitHub username
-baseurl: "/DAE-Demo" # ← Your actual repository name
+baseurl: "/DAE-Demo/theme2" # ← Subdirectory path for theme2
 
 # =====================
 # THEME (Dark Modern)
